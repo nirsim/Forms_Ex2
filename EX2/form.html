@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<head>
+ 
+    <title>Base html</title>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Tinos');
+    </style>
+
+</head>
+
+
+<header>
+
+</header>
+
+
+<body>
+
+<form>
+
+    <h1>Forms EX 2</h1>
+
+    <br>
+
+    <fieldset>
+
+        <legend class="mainlegend">Create Account</legend>
+        <label for="email">Enter your eMail address &nbsp</label>
+        <input type="email" name="email"
+             placeholder="eMail goes here" id="email"
+                size="30">
+        
+        <br><br>
+        <label for="pass1">Type in your password &nbsp &nbsp</label>
+        <input type="password" name="pass1" 
+                placeholder="Password goes here" id= "pass1"
+                size="15">
+        <br>
+        
+        <label for="passConf">Confirm your password &nbsp</label>
+        <input type="password" name="passConf" 
+                placeholder="Confirmation goes here" id="passConf"
+                size="17">
+        
+        <br>        
+        
+    </fieldset>
+
+    <br>
+    <!--input type="submit" name="submit" placeholder="Submit"-->
+
+    <fieldset >
+        
+            <legend class="mainlegend">Personal Details</legend>
+            <br> 
+            
+            <label for="date">Date of birth:&nbsp</label>
+            <input type="date" id="date"> 
+               
+            <br>
+            <label for="age">Choose your age &nbsp</label>
+            <input type="range" name="age" 
+                    placeholder="age" id="age" min="0" value="30" max="120">
+            
+            <br><br>
+            <fieldset class="Status">
+                
+                <legend>Status</legend>
+                
+                <label for="Single">Single  &nbsp &nbsp  &nbsp</label>
+                <input type="radio" name="status"
+                        placeholder="palceholder" id="Single">
+                <br>                    
+                <label for="Married">Married  &nbsp  &nbsp</label>
+                <input type="radio" name="status"
+                placeholder="palceholder" id="Married">
+        
+                <br>
+                
+                <label for="Divorced">Divorced</label>
+                <input type="radio" name="status"
+                placeholder="palceholder" id="Divorced">
+        
+            </fieldset>
+
+            
+            
+            <br><br>
+            
+            Hobbies
+            <br>
+            <select>
+                <optgroup label="Outdoors" >
+                    <option disabled selected value="" style="display:none">hidden</option>
+                    <option value="fishing" selected>Fishing</option>
+                    <option value="hicking">Hicking</option>
+                    <option value="camp fire">Camp fire</option>
+                    </optgroup>
+                <optgroup label="Sports">
+                <option value="golf">Golf</option>
+                <option value="basketball">Basketball</option>
+                <option value="football">Football</option>
+                <option value="polo">Polo</option>
+                </optgroup>
+
+                </select>
+
+            <br>
+            
+            <input type="hidden" name="landing" id="landing" value="W24LCH">
+            
+        </fieldset>
+    <br>
+  
+    <br>
+
+    <fieldset>
+
+        <legend class="mainlegend">More personal details</legend>
+        <label for="email">Enter your eMail address &nbsp</label>
+        <input type="email" name="email"
+                placeholder="eMail goes here" id="email"
+                size="30">
+        
+        <br><br>
+        <label for="pass1">Type in your password &nbsp &nbsp</label>
+        <input type="password" name="pass1" 
+                placeholder="Password goes here" id= "pass1"
+                size="15">
+        <br>
+        
+        <label for="passConf">Confirm your password &nbsp</label>
+        <input type="password" name="passConf" 
+                placeholder="Confirmation goes here" id="passConf"
+                size="17">
+        
+        <br>        
+        <input type="submit" name="submit" placeholder="Submit" id="submit">
+    </fieldset>    
+
+</form>
+
+    
+</body>
+
+</html>

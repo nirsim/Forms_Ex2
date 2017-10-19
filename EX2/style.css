@@ -1,0 +1,49 @@
+
+
+* { margin: 1px;
+    box-sizing: border-box;
+    text-decoration: none;
+   
+}
+
+
+body {  direction:ltr;
+        text-align: left;
+        margin:0px;
+        padding:0px;
+
+}
+/* :after {   
+                content: "";
+                clear: both;
+                display: table;
+              } 
+*/
+
+
+
+input{
+
+    display: inline-block;
+        
+    }
+
+
+fieldset 
+    {
+        width:400px;
+        color: blue;
+        border-color:red;
+        background: silver;
+    }
+
+legend{
+        font-weight: bold;
+        color:black;
+        }
+
+.Status {
+        width:100px;
+        background-color:lightgray;
+        }
+
