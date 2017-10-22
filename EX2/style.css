@@ -2,7 +2,7 @@
 
 * { margin: 1px;
     box-sizing: border-box;
-    text-decoration: none;
+   
    
 }
 
@@ -11,6 +11,7 @@ body {  direction:ltr;
         text-align: left;
         margin:0px;
         padding:0px;
+        background-color:lightblue;
 
 }
 /* :after {   
@@ -34,7 +35,7 @@ fieldset
         width:400px;
         color: blue;
         border-color:red;
-        background: silver;
+        background: rgb(240, 200, 215);
     }
 
 legend{
@@ -43,7 +44,42 @@ legend{
         }
 
 .Status {
-        width:100px;
+        width:120px;
         background-color:lightgray;
+        }
+#Single, #Married, #Divorced {float: right;}
+
+#ageInputId{
+    width:200px;
+    color:black;
+    background-color: yellow;
+}
+
+#textarea
+{   
+    display:inline-block;
+    width:250px;
+    height:120px;
+    
+}
+
+
+
+.resetsubmit
+{   
+    float:left;
+}
+
+
+progress
+    {
+        position: relative;
+        margin:0px 0px 0px 20px;
+        text-align:center;
+        vertical-align:center;
+    }
+
+progress:before {
+        content: 'Step ' attr(value) ' ' attr(data-label);
         }
 

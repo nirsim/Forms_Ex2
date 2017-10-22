@@ -2,14 +2,10 @@
 
 <head>
  
-    <title>Base html</title>
-
-    <script src="script.js"></script>
+    <title>Forms EX 2</title>
     <link rel="stylesheet" href="style.css">
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Tinos');
-    </style>
+            <!--caling js-->
+    <script src="jsindex.js"></script>
 
 </head>
 
@@ -27,6 +23,11 @@
 
     <br>
 
+    <progress id="progbar" value="1" max="4" ></progress>
+
+    
+    
+    <br><br>
     <fieldset>
 
         <legend class="mainlegend">Create Account</legend>
@@ -39,20 +40,21 @@
         <label for="pass1">Type in your password &nbsp &nbsp</label>
         <input type="password" name="pass1" 
                 placeholder="Password goes here" id= "pass1"
-                size="15">
+                size="16">
         <br>
         
         <label for="passConf">Confirm your password &nbsp</label>
         <input type="password" name="passConf" 
                 placeholder="Confirmation goes here" id="passConf"
-                size="17">
+                size="16">
         
         <br>        
         
     </fieldset>
-
     <br>
-    <!--input type="submit" name="submit" placeholder="Submit"-->
+    <progress value="2" max="4">Step 2</progress>
+    <br><br>
+    
 
     <fieldset >
         
@@ -62,19 +64,40 @@
             <label for="date">Date of birth:&nbsp</label>
             <input type="date" id="date"> 
                
-            <br>
-            <label for="age">Choose your age &nbsp</label>
-            <input type="range" name="age" 
-                    placeholder="age" id="age" min="0" value="30" max="120">
+            <br><br>
+            <label for="ageInputId">Choose your age &nbsp</label>
+            <br><br>
+            <input type="range" name="age" list="tickmarks" id="ageInputId" 
+                    min="0" value="40" max="120" step="1"
+                    oninput="ageOutputId.value = ageInputId.value">
+                                       
+                <datalist id="tickmarks">
+                    <option value="0"  >
+                    <option value="10" >
+                    <option value="20" >
+                    <option value="30" >
+                    <option value="40" >
+                    <option value="50" >
+                    <option value="60" >
+                    <option value="70" >
+                    <option value="80" >
+                    <option value="90" >
+                    <option value="100" >
+                    <option value="110" >
+                    <option value="120" >
+                </datalist>
+            
+                  <output name="age" id="ageOutputId">40</output>        
             
             <br><br>
-            <fieldset class="Status">
+            
+            <fieldset class="Status" >
                 
                 <legend>Status</legend>
                 
                 <label for="Single">Single  &nbsp &nbsp  &nbsp</label>
                 <input type="radio" name="status"
-                        placeholder="palceholder" id="Single">
+                        placeholder="palceholder" id="Single" required>
                 <br>                    
                 <label for="Married">Married  &nbsp  &nbsp</label>
                 <input type="radio" name="status"
@@ -119,32 +142,37 @@
   
     <br>
 
+
+    <progress value="3" max="4" ></progress>
+    <br><br>
     <fieldset>
 
         <legend class="mainlegend">More personal details</legend>
-        <label for="email">Enter your eMail address &nbsp</label>
-        <input type="email" name="email"
-                placeholder="eMail goes here" id="email"
-                size="30">
+        <label for="file">Load a profile picture &nbsp</label>
+        <input type="file" name="file" id="file" value="some text">
+
+        
         
         <br><br>
-        <label for="pass1">Type in your password &nbsp &nbsp</label>
-        <input type="password" name="pass1" 
-                placeholder="Password goes here" id= "pass1"
-                size="15">
+        <label for="textarea" id="textarealabel">Type in Some things about yourself &nbsp &nbsp</label>
+        <textarea name="textarea" placeholder="Some things about myself" 
+                id= "textarea" ></textarea>
         <br>
-        
-        <label for="passConf">Confirm your password &nbsp</label>
-        <input type="password" name="passConf" 
-                placeholder="Confirmation goes here" id="passConf"
-                size="17">
-        
-        <br>        
-        <input type="submit" name="submit" placeholder="Submit" id="submit">
+
+                      
+        <br>  
+        <div class="resetsubmit">
+            <input type="reset" name="reset" placeholder="reset" id="reset">
+
+                
+            <input type="submit" name="submit" placeholder="Submit" id="submit">
+        </div>      
     </fieldset>    
-
+    <br>
+    <progress value="4" max="4" data-label="done"></progress>
+    <br>
 </form>
-
+<br>
     
 </body>
 
